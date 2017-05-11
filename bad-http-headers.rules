@@ -1,0 +1,6 @@
+alert tcp any any -> any any (msg:"X-Powered-By: ASP.NET"; content:"X-Powered-By: ASP.NET"; http_header; sid:5000000;)
+alert tcp any any -> any any (msg:"X-AspNet-Version"; content:"X-AspNet-Version"; http_header; sid:5000001;)
+alert tcp any any -> any any (msg:"X-AspNetMvc-Version"; content:"X-AspNetMvc-Version"; http_header; sid:5000002;)
+alert tcp any any -> any any (msg:"Pragma: no-cache"; content:"Pragma: no-cache"; http_header; sid:5000003;)
+alert tcp any any -> any any (msg:"X-UA-Compatible"; content:"X-UA-Compatible"; http_header; sid:5000004;)
+
